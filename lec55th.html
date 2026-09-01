@@ -1,0 +1,32 @@
+<!-- // deletion : -->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Delete Property</title>
+</head>
+<body>
+
+    <script>
+        class Student {
+            constructor(name, rollno, city) {
+                this.name = name;
+                this.rollno = rollno;
+                this.city = city;
+            }
+        }
+
+        let s1 = new Student("Archit", 101, "Delhi");
+
+        // Before deleting
+        console.log(s1);
+
+        // Delete name property
+        delete s1.name;
+
+        // After deleting
+        console.log(s1);
+    </script>
+
+</body>
+</html>

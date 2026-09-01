@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Date</title>
+</head>
+
+<body>
+
+    <h1>Date Operations</h1>
+
+    <p id="output"></p>
+
+    <script>
+
+        let date = new Date();
+
+        document.getElementById("output").innerHTML =
+            "Current Date: " + date + "<br>" +
+            "Date: " + date.getDate() + "<br>" +
+            "Month: " + (date.getMonth() + 1) + "<br>" +
+            "Year: " + date.getFullYear() + "<br>" +
+            "Day: " + date.getDay() + "<br>" +
+            "Hours: " + date.getHours() + "<br>" +
+            "Minutes: " + date.getMinutes() + "<br>" +
+            "Seconds: " + date.getSeconds();
+
+    </script>
+
+</body>
+</html>

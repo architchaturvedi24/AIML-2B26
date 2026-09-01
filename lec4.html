@@ -1,0 +1,167 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Registration Form</h1>
+    <input type="text" id="name" placeholder="Name"><br><br>
+     <input type="email" id="email" placeholder="Email"><br><br>
+      <input type="text" id="mobile" placeholder="Mobile No."><br><br>
+       <input type="password" id="password" placeholder="Password"><br><br>
+        <input type="password" id="repassword" placeholder="Repassword"><br><br>
+
+        <button onclick="submitForm()">Submit</button>
+        <p id="result"></p>
+
+        <script>
+            function submitForm(){
+        let name = document.getElementById("name").value;
+         let mobile = document.getElementById("mobile").value;
+          let password = document.getElementById("password").value;
+           let repassword = document.getElementById("repassword").value;
+
+            }
+            document.getElementById("result").innerHTML="Registration Successful";
+        </script>
+
+
+    
+</body>
+</html> -->
+
+
+
+
+<!-- 
+
+// Code by GPT:
+ 
+// <!DOCTYPE html>
+// <html>
+// <body>
+
+// <h2>Registration Form</h2>
+
+// <input type="text" id="name" placeholder="Name"><br><br>
+// <input type="email" id="email" placeholder="Email"><br><br>
+// <input type="text" id="mobile" placeholder="Mobile No."><br><br>
+// <input type="password" id="password" placeholder="Password"><br><br>
+// <input type="password" id="repassword" placeholder="Re-Password"><br><br>
+
+// <button onclick="submitForm()">Submit</button>
+
+// <p id="result"></p>
+
+// <script>
+// function submitForm() {
+//     let name = document.getElementById("name").value;
+//     let email = document.getElementById("email").value;
+//     let mobile = document.getElementById("mobile").value;
+//     let password = document.getElementById("password").value;
+//     let repassword = document.getElementById("repassword").value;
+
+//     document.getElementById("result").innerHTML =
+//         "Registration Successful";
+// }
+// </script>
+
+// </body>
+// </html>  -->
+
+
+
+<!-- // proper class code: -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration</title>
+</head>
+
+<body>
+
+    <h1>REGISTRATION</h1>
+
+    <div>
+        <form action="" id="Registration" onsubmit="return validate()">
+
+            <input type="text" id="uname" placeholder="Enter Name">
+            <br><br>
+
+            <input type="tel" id="num" placeholder="Enter Phone Number">
+            <br><br>
+
+            <input type="email" id="email" placeholder="Enter Email">
+            <br><br>
+
+            <input type="password" id="pass" placeholder="Enter Password">
+            <br><br>
+
+            <input type="password" id="repass" placeholder="Confirm Password">
+            <br><br>
+
+            <input type="submit" id="submit" value="Submit">
+
+        </form>
+    </div>
+
+    <script>
+
+        function validate() {
+
+            let n = document.getElementById("uname").value;
+            let num = document.getElementById("num").value;
+            let email = document.getElementById("email").value;
+            let pass = document.getElementById("pass").value;
+            let repass = document.getElementById("repass").value;
+
+            // Name validation
+            if (n == "") {
+                alert("Please fill your Name");
+                return false;
+            }
+
+            // Phone validation
+            if (num == "") {
+                alert("Please fill your Phone Number");
+                return false;
+            }
+
+            // Email validation
+            if (email == "") {
+                alert("Please fill your Email");
+                return false;
+            }
+
+            // Password validation
+            if (pass == "") {
+                alert("Please enter Password");
+                return false;
+            }
+
+            // Confirm password
+            if (repass == "") {
+                alert("Please confirm your Password");
+                return false;
+            }
+
+            // Check passwords
+            if (pass != repass) {
+                alert("Passwords do not match");
+                return false;
+            }
+
+            alert("Registration Successful!");
+            return true;
+        }
+
+    </script>
+</body>
+
+</html>

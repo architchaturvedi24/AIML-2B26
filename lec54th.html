@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Class and Constructor</title>
+</head>
+<body>
+
+    <h2>Student Details</h2>
+
+    <script>
+        // Creating a class
+        class Student {
+
+            // Constructor for initialization
+            constructor(name, rollno, pincode, city) {
+                this.name = name;
+                this.rollno = rollno;
+                this.pincode = pincode;
+                this.city = city;
+            }
+
+            // Display function
+            display() {
+                document.write("Name: " + this.name + "<br>");
+                document.write("Roll No: " + this.rollno + "<br>");
+                document.write("Pincode: " + this.pincode + "<br>");
+                document.write("City: " + this.city + "<br><br>");
+
+                console.log("Name:", this.name);
+                console.log("Roll No:", this.rollno);
+                console.log("Pincode:", this.pincode);
+                console.log("City:", this.city);
+            }
+        }
+
+        // Creating multiple objects
+        let s1 = new Student("Archit", 101, 110001, "Delhi");
+        let s2 = new Student("Rahul", 102, 201001, "Ghaziabad");
+
+        // Calling display function
+        s1.display();
+        s2.display();
+
+    </script>
+
+</body>
+</html>

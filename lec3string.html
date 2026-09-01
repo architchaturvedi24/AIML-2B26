@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>JavaScript String Operations</title>
+</head>
+
+<body>
+
+    <h1>String Operations</h1>
+
+    <p id="output"></p>
+
+    <script>
+        let str = "Hello JavaScript World";
+        let result = "";
+      // 1. toUpperCase()
+        result += "Uppercase: " + str.toUpperCase() + "<br>";
+        // 2. toLowerCase()
+        result += "Lowercase: " + str.toLowerCase() + "<br>";
+        // 3. charAt()
+        result += "Character at index 1: " + str.charAt(1) + "<br>";
+        // 4. indexOf()
+        result += "Index of 'JavaScript': " + str.indexOf("JavaScript") + "<br>";
+        // 5. lastIndexOf()
+        let str2 = "JavaScript is easy and JavaScript is powerful";
+        result += "Last index of 'JavaScript': "
+                + str2.lastIndexOf("JavaScript") + "<br>";
+        // 6. slice()
+        result += "Slice(0, 5): " + str.slice(0, 5) + "<br>";
+      // 7. split()
+        let fruits = "Apple,Banana,Mango";
+        let arr = fruits.split(",");
+        result += "Split: " + arr + "<br>";
+   // 8. includes()
+        result += "Includes 'JavaScript': "
+                + str.includes("JavaScript") + "<br>";
+        // 9. replace()
+        result += "Replace: "
+                + str.replace("World", "Programming") + "<br>";
+        // 10. concatenate
+        let firstName = "Archit";
+        let lastName = "Chaturvedi";
+     let fullName = firstName.concat(" ", lastName);
+        result += "Concatenation: " + fullName + "<br>";
+        // Display output
+        document.getElementById("output").innerHTML = result;
+
+    </script>
+
+</body>
+</html>

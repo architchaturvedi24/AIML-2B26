@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Product Management</title>
+</head>
+<body>
+
+    <h2>E-Commerce Product Information</h2>
+
+    <script>
+        // User-defined object
+        let product = {
+            productID: 101,
+            productName: "Laptop",
+            price: 50000,
+            quantity: 2,
+
+            // Method to calculate total price
+            calculateTotalPrice: function() {
+                return this.price * this.quantity;
+            },
+            // Method to update quantity
+            updateQuantity: function(newQuantity) {
+                this.quantity = newQuantity;
+            },
+            // Method to display product information
+            display: function() {
+                document.write("Product ID: " + this.productID + "<br>");
+            document.write("Product Name: " + this.productName + "<br>");
+              document.write("Price: " + this.price + "<br>");
+                document.write("Quantity: " + this.quantity + "<br>");
+               document.write("Total Price: " + this.calculateTotalPrice() + "<br><br>");
+
+              console.log("Product ID:", this.productID);
+             console.log("Product Name:", this.productName);
+                console.log("Price:", this.price);
+                console.log("Quantity:", this.quantity);
+           console.log("Total Price:", this.calculateTotalPrice());
+            }
+        };
+        // Display original information
+        product.display();
+        // Update quantity
+        product.updateQuantity(5);
+        document.write("After Updating Quantity:<br>");
+        product.display();
+    </script>
+</body>
+</html>

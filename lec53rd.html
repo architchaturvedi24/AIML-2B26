@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Multiple Student Objects</title>
+</head>
+<body>
+
+    <h2>Student Details</h2>
+
+    <script>
+        // Constructor Function
+        function Student(name, rollno, pincode, city) {
+            this.name = name;
+            this.rollno = rollno;
+            this.pincode = pincode;
+            this.city = city;
+        }
+
+        // Creating multiple objects
+        let s1 = new Student("Archit", 101, 110001, "Delhi");
+        let s2 = new Student("Abhay", 102, 201001, "Ghaziabad");
+        let s3 = new Student("Aman", 103, 201301, "Noida");
+        // Console Output
+        console.log("Student 1:", s1);
+        console.log("Student 2:", s2);
+        console.log("Student 3:", s3);
+        // Displaying Student 1
+        document.write("<h3>Student 1</h3>");
+        document.write("Name: " + s1.name + "<br>");
+        document.write("Roll No: " + s1.rollno + "<br>");
+        document.write("Pincode: " + s1.pincode + "<br>");
+        document.write("City: " + s1.city + "<br>");
+
+        // Displaying Student 2
+        document.write("<h3>Student 2</h3>");
+        document.write("Name: " + s2.name + "<br>");
+        document.write("Roll No: " + s2.rollno + "<br>");
+        document.write("Pincode: " + s2.pincode + "<br>");
+        document.write("City: " + s2.city + "<br>");
+
+        // Displaying Student 3
+        document.write("<h3>Student 3</h3>");
+        document.write("Name: " + s3.name + "<br>");
+        document.write("Roll No: " + s3.rollno + "<br>");
+        document.write("Pincode: " + s3.pincode + "<br>");
+        document.write("City: " + s3.city + "<br>");
+    </script>
+
+</body>
+</html>

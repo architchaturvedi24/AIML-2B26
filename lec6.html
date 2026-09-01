@@ -1,0 +1,113 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Shopping Product Mnagement</title>
+</head>
+<body>
+      <h2>Online Shopping Product Mnagement</h2>
+    <script>
+    let product = {
+        productID: 56,
+        productName: "Parle-G",
+        price: 50,
+        quantity: 5,
+
+        calculateTotalPrice: function(){
+            return this.price* this.quantity;
+        },
+        updateQuantity: function(newQuantity){
+            this.quantity = newQuantity;
+        },
+
+        display: function(){
+            document.write("Product ID:" + this.productID + "<br>");
+              document.write("Product Name:" + this.productName + "<br>");
+                document.write("Price:" + this.price + "<br>");
+                  document.write("Quantity:" + this.quantity + "<br>");
+                    document.write("Total Price:" + this.calculateTotalPrice() + "<br> <br>");
+
+                    console.log("Product ID:", this.productID);
+                      console.log("Product Name:", this.productname);
+                        console.log("Price:", this.price);
+                          console.log("Quantity:", this.quantity);
+                            console.log("Total Price:", this.calculateTotalPrice());
+
+        }
+    };
+
+
+    product.display();
+    product.updateQuantity(6);
+    document.write("After Updating Quantity: <br>");
+    product.display();
+</script>
+
+    
+</body>
+</html>  -->
+
+
+// Right COde : For Question 1:
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Shopping Product Management</title>
+</head>
+
+<body>
+
+<h2>Online Shopping Product Management</h2>
+
+<script>
+
+let product = {
+
+    productID: prompt("Enter Product ID:"),
+    productName: prompt("Enter Product Name:"),
+    price: Number(prompt("Enter Price:")),
+    quantity: Number(prompt("Enter Quantity:")),
+
+    calculateTotalPrice: function() {
+        return this.price * this.quantity;
+    },
+
+    updateQuantity: function(newQuantity) {
+        this.quantity = newQuantity;
+    },
+
+    display: function() {
+
+        document.write("Product ID: " + this.productID + "<br>");
+        document.write("Product Name: " + this.productName + "<br>");
+        document.write("Price: " + this.price + "<br>");
+        document.write("Quantity: " + this.quantity + "<br>");
+        document.write("Total Price: " + this.calculateTotalPrice() + "<br><br>");
+
+    }
+};
+
+// Original details
+product.display();
+
+// New quantity from user
+let newQuantity = Number(prompt("Enter Updated Quantity:"));
+
+product.updateQuantity(newQuantity);
+
+document.write("<h3>After Updating Quantity:</h3>");
+
+product.display();
+
+</script>
+
+</body>
+</html> 
+
+ 
+
+

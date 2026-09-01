@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>User Defined Object</title>
+</head>
+<body>
+    <h2>User Defined Object in JavaScript</h2>
+
+    <script>
+        let student = {
+            name: "Archit",
+            age: 20,
+            course: "BCA"
+        };
+
+           
+    // display: function() {
+    //     console.log("Name: " + this.name);
+    //     console.log("Age: " + this.age);
+    //     console.log("Course: " + this.course);
+    // };
+
+
+// Calling the object method
+student.display();
+
+
+        document.write("Name: " + student.name + "<br>");
+        document.write("Age: " + student.age + "<br>");
+        document.write("Course: " + student.course + "<br>");
+
+          // Calling object variables
+        document.write(student.name + "<br>");
+        document.write(student.age + "<br>");
+        document.write(student.course);
+    </script>
+</body>
+</html>
+
+<!-- 
+<!DOCTYPE html>
+<html>
+<head>
+    <title>User Defined Object</title>
+</head>
+<body>
+
+    <h2>User Defined Object in JavaScript</h2>
+
+    <script>
+        // Creating user-defined object
+        let student = {
+            name: "Archit",
+            age: 20,
+            course: "BCA"
+        };
+
+        // Calling object variables using console.log()
+        console.log(student.name);
+        console.log(student.age);
+        console.log(student.course);
+    </script>
+
+</body>
+</html> -->

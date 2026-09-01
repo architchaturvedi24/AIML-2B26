@@ -1,0 +1,162 @@
+  
+  <!-- Functions and Object: -->
+  
+  
+  
+  <!-- <!DOCTYPE html>
+<html>
+<head>
+    <title>JavaScript Array Operations</title>
+</head>
+
+<body>
+
+    <h1>JavaScript Array Operations</h1>
+
+    <h2>Array:</h2>
+    <p id="array"></p>
+
+    <button onclick="pushElement()">Push</button>
+    <button onclick="popElement()">Pop</button>
+    <button onclick="unshiftElement()">Unshift</button>
+    <button onclick="shiftElement()">Shift</button>
+    <button onclick="spliceElement()">Splice</button>
+    <button onclick="sliceElement()">Slice</button>
+    <button onclick="splitElement()">Split</button>
+
+    <h2>Output:</h2>
+    <p id="output"></p>
+
+
+    <script>
+
+        // Original Array
+        let arr = [10, 20, 30, 40, 50];
+
+        // Display original array
+        document.getElementById("array").innerHTML = arr;
+
+
+        // PUSH
+        function pushElement() {
+            arr.push(60);
+
+            document.getElementById("array").innerHTML = arr;
+            document.getElementById("output").innerHTML =
+                "After push(60): " + arr;
+        }
+
+
+        // POP
+        function popElement() {
+            arr.pop();
+
+            document.getElementById("array").innerHTML = arr;
+            document.getElementById("output").innerHTML =
+                "After pop(): " + arr;
+        }
+
+
+        // UNSHIFT
+        function unshiftElement() {
+            arr.unshift(5);
+
+            document.getElementById("array").innerHTML = arr;
+            document.getElementById("output").innerHTML =
+                "After unshift(5): " + arr;
+        }
+
+
+        // SHIFT
+        function shiftElement() {
+            arr.shift();
+
+            document.getElementById("array").innerHTML = arr;
+            document.getElementById("output").innerHTML =
+                "After shift(): " + arr;
+        }
+
+
+        // SPLICE
+        function spliceElement() {
+            arr.splice(2, 0, 25);
+
+            document.getElementById("array").innerHTML = arr;
+            document.getElementById("output").innerHTML =
+                "After splice(2, 0, 25): " + arr;
+        }
+
+
+        // SLICE
+        function sliceElement() {
+            let result = arr.slice(1, 4);
+
+            document.getElementById("output").innerHTML =
+                "After slice(1, 4): " + result;
+        }
+
+        // SPLIT
+        function splitElement() {
+            let str = "Apple,Banana,Mango,Orange";
+
+            let result = str.split(",");
+
+            document.getElementById("output").innerHTML =
+                "After split(','): " + result;
+        }
+
+    </script>
+
+</body>
+</html> -->
+
+
+<!-- Small code  -->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Array Operations</title>
+</head>
+
+<body>
+
+    <h1>JavaScript Array Operations</h1>
+
+    <p id="output"></p>
+
+    <script>
+        let arr = [10, 20, 30, 40, 50];
+        let result = "";
+        result += "Original Array: " + arr + "<br><br>";
+        // PUSH
+        arr.push(60);
+        result += "After push(60): " + arr + "<br>";
+        // POP
+        arr.pop();
+        result += "After pop(): " + arr + "<br>";
+        // UNSHIFT
+        arr.unshift(5);
+        result += "After unshift(5): " + arr + "<br>";
+        // SHIFT
+        arr.shift();
+        result += "After shift(): " + arr + "<br>";
+        // SPLICE
+        arr.splice(2, 0, 25);
+        result += "After splice(2, 0, 25): " + arr + "<br>";
+        // SLICE
+        let slicedArray = arr.slice(1, 4);
+        result += "After slice(1, 4): " + slicedArray + "<br>";
+        // SPLIT
+        let str = "Apple,Banana,Mango,Orange";
+        let splitArray = str.split(",");
+
+        result += "Original String: " + str + "<br>";
+        result += "After split(','): " + splitArray;
+        // Display Output
+        document.getElementById("output").innerHTML = result;
+
+    </script>
+
+</body>
+</html>

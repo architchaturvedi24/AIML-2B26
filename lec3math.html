@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>JavaScript Math Operations</title>
+</head>
+
+<body>
+
+    <h1>JavaScript Math Operations</h1>
+
+    <p id="output"></p>
+
+    <script>
+
+        let result = "";
+
+        // 1. Math.abs()
+        result += "Absolute Value: " + Math.abs(-25) + "<br>";
+        // 2. Math.sqrt()
+        result += "Square Root: " + Math.sqrt(25) + "<br>";
+        // 3. Math.pow()
+        result += "Power: " + Math.pow(2, 3) + "<br>";
+        // 4. Math.round()
+        result += "Round: " + Math.round(4.6) + "<br>";
+        // 5. Math.floor()
+        result += "Floor: " + Math.floor(4.9) + "<br>";
+        // 6. Math.ceil()
+        result += "Ceil: " + Math.ceil(4.1) + "<br>";
+        // 7. Math.max()
+        result += "Maximum: " + Math.max(10, 50, 30, 80, 20) + "<br>";
+        // 8. Math.min()
+        result += "Minimum: " + Math.min(10, 50, 30, 80, 20) + "<br>";
+        // 9. Math.random()
+        result += "Random Number: " + Math.random() + "<br>";
+        // 10. Random number from 1 to 10
+        result += "Random Number (1-10): "
+                + (Math.floor(Math.random() * 10) + 1) + "<br>";
+        // 11. Math.trunc()
+        result += "Truncate: " + Math.trunc(7.89) + "<br>";
+        // 12. Math.sign()
+        result += "Sign of -25: " + Math.sign(-25) + "<br>";
+        // 13. Math.cbrt()
+        result += "Cube Root: " + Math.cbrt(27) + "<br>";
+        // 14. Math.PI
+        result += "Value of PI: " + Math.PI + "<br>";
+        // 15. Math.E
+        result += "Value of E: " + Math.E + "<br>";
+        // Display result
+        document.getElementById("output").innerHTML = result;
+
+    </script>
+
+</body>
+</html>
