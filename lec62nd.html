@@ -7,29 +7,22 @@
     <title>Bank Account Management</title>
 </head>
 <body>
-
-    <h2>Bank Account Management System</h2>
-
-    <script>
-
-        // User Input
+  <h2>Bank Account Management System</h2>
+  <script>
+    // User Input
         let name = prompt("Enter Account Holder Name:");
         let accountNumber = prompt("Enter Account Number:");
         let balance = Number(prompt("Enter Account Balance:"));
-
         // User-defined object
         let bankAccount = {
-
             accountHolderName: name,
             accountNumber: accountNumber,
             accountBalance: balance,
-
-            // Deposit method
+    // Deposit method
             deposit: function(amount) {
                 this.accountBalance += amount;
                 document.write("<p>Deposited Amount: ₹" + amount + "</p>");
             },
-
             // Withdraw method
             withdraw: function(amount) {
 
@@ -41,7 +34,6 @@
                     document.write("<p>Withdrawn Amount: ₹" + amount + "</p>");
                 }
             },
-
             // Display balance
             displayBalance: function() {
                 document.write(
@@ -49,25 +41,19 @@
                 );
             }
         };
-
         // Display account details
         document.write("<h3>Account Details</h3>");
         document.write("<p>Account Holder: " + bankAccount.accountHolderName + "</p>");
         document.write("<p>Account Number: " + bankAccount.accountNumber + "</p>");
         document.write("<p>Initial Balance: ₹" + bankAccount.accountBalance + "</p>");
-
         // Deposit
         let depositAmount = Number(prompt("Enter amount to deposit:"));
         bankAccount.deposit(depositAmount);
-
-        // Withdraw
+    // Withdraw
         let withdrawAmount = Number(prompt("Enter amount to withdraw:"));
         bankAccount.withdraw(withdrawAmount);
-
-        // Current Balance
+     // Current Balance
         bankAccount.displayBalance();
-
-    </script>
-
+ </script>
 </body>
 </html>
