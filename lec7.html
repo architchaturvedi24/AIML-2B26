@@ -1,0 +1,156 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>String Template </title>
+</head>
+<body>
+    <h2>String Templates</h2>
+    <script>
+        let firstName="Vikas";
+     let lastName="Chaoudhary";
+     console.log(`My firstName is $(firstName)`);
+     console.log(`my name is : ${firstName}${lastName}`);
+       console.log(`"my name is :" ${firstName}${lastName}`);
+       function FullName(first, last){
+        return`$(first)$(last)`
+       }
+       let Name = `Hell ${FullName(firstName,lastName)}`;
+       console.log(Name);
+
+
+       // Normal Function
+
+       function hello{
+        console.log("hello world");
+       }
+   // or
+       let hello=function(){
+        console.log("helloworld");
+
+       }
+
+       // Arrow Function :
+
+       hello=()=>console.log(`hello world`);
+
+       // or
+       let marks= 5;
+       let first= 6;
+       let last= 7;
+
+       function physics(marks){
+        return `&(marks)`;
+
+       }
+
+       physics=(marks)=> `$(marks)`;
+       console.log(physics);
+       FullName=(first,last)=>{
+      return `${first}${last}`;
+       } 
+       
+
+
+</script>
+    
+</body>
+</html> -->
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>String Template</title>
+</head>
+
+<body>
+    
+    <h2>String Templates</h2>
+
+    <script>
+
+        // String Template
+
+        let firstName = "Vikas";
+        let lastName = "Choudhary";
+
+        console.log(`My firstName is ${firstName}`);
+        console.log(`My name is: ${firstName} ${lastName}`);
+        console.log(`"My name is:" ${firstName} ${lastName}`);
+
+
+        // Function using String Template
+
+        function FullName(first, last) {
+            return `${first} ${last}`;
+        }
+
+        let Name = `Hello ${FullName(firstName, lastName)}`;
+        console.log(Name);
+
+
+        // Normal Function
+
+        function hello() {
+            console.log("Hello World");
+        }
+
+        hello();
+
+
+        // Function Expression
+
+        let hello2 = function () {
+            console.log("Hello World");
+        };
+
+        hello2();
+
+
+        // Arrow Function
+
+        let hello3 = () => console.log("Hello World");
+
+        hello3();
+
+
+        // Marks Example
+
+        let marks = 5;
+        let first = 6;
+        let last = 7;
+
+        function physics(marks) {
+            return `${marks}`;
+        }
+
+        console.log(physics(marks));
+
+
+        // Arrow Function
+
+        let physics2 = (marks) => `${marks}`;
+
+        console.log(physics2(marks));
+
+
+        // Arrow Function with two parameters
+
+        let FullName2 = (first, last) => {
+            return `${first} ${last}`;
+        };
+
+        console.log(FullName2(firstName, lastName));
+
+    </script>
+
+</body>
+
+</html>
+
