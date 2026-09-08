@@ -1,0 +1,49 @@
+// Spread Operators :
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spread Operators</title>
+</head>
+<body>
+
+    <h1>Spread Operators</h1>
+    <script>
+
+        // function sum(...value);
+        // function sum(name, ...value);
+        // function sum(name, roll no.,...value)
+
+        //  sum(10,20,30);
+        // sum("Archit", 10, 20, 30);
+        // sum("Archit", 10, 20, 30);
+        // let arr =[10, 20, 30];
+        // sum(...arr);
+        // console.log(arr);
+        // console.log(...arr);
+        // console.log([...arr]);
+
+        // arr.push(40);
+
+        function sum(...values)
+        {
+            let sum= 0;
+            for(let i in values){
+                sum= sum + values[i];
+        console.log (i);
+            }
+            console.log(sum);
+
+        };
+        let arr=[10,20,30,40]
+        sum(...arr);
+     
+
+
+
+    </script>
+    
+</body>
+</html>

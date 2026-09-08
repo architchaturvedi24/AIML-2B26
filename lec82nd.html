@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spread Operator</title>
+    <script>
+        function sum(...values){
+            let sum=0 ;
+            for(let i in values ){
+                sum=sum+values[i];
+            }
+            console.log("Your array is ",values);
+            console.log("Sum is ",sum)
+        };
+        let ar=[10,20,30,40];
+        console.log(sum(...ar));
+        let a1=[1,2,3,5,6]
+        let a2=[7,8,0,9]
+        let a3=[...a1,...a2]
+        console.log(a3)
+        let a4=[60,...a1,70,...a2]
+        console.log(a4)
+
+    </script>
+</head>
+<body>
+
+    <h1>Spread Operators</h1>
+    
+</body>
+</html>
