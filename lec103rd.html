@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Constructor</title>
+</head>
+<body>
+   <h1>Constructor</h1>
+    <script>
+        class Student {
+            constructor(roll, name, year) {
+                this.rollNumber = roll;
+                this.Name = name;
+                this.Year = year;
+
+                console.log(this.rollNumber);
+                console.log(this.Name);
+                console.log(this.Year);
+            }
+        }
+
+        let s1 = new Student(100, "Default", "1st");
+        let s2 = new Student(101, "Archit", "2nd");
+        let s3 = new Student(102, "Vikash", "2nd");
+    </script>
+</body>
+</html>
