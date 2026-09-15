@@ -8,8 +8,23 @@
 <body>
     <h1>Inheritance</h1>
     <script>
+      class hello{
+        constructor(){
+            console.log("Hello constructor");
 
-        
+        }
+      }
+      class Hi extends hello{
+
+        constructor(){
+            super();
+            console.log("Hi Constructor");
+
+        }
+      }
+
+              let h1= new Hi();
+
     </script>
 </body>
 </html>
