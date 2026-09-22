@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Commerce Product System</title>
+</head>
+<body>
+    <h1>E-Commerce Product System</h1>
+<script>
+class Product {
+    constructor(productId, productName, price) {
+        this.productId = productId;
+        this.productName = productName;
+        this.price = price;
+    } 
+}
+// Derived class
+class Electronics extends Product {
+    constructor(productId, productName, price, warranty) {
+        super(productId, productName, price);
+        this.warranty = warranty;
+    }
+    display() {
+        console.log("Product ID:", this.productId);
+     console.log("Product Name:", this.productName);
+      console.log("Price: ₹" + this.price);
+        console.log("Warranty:", this.warranty, "years");
+    }
+}
+// Creating objects
+let product1 = new Product(101, "Shoes", 2000);
+let product2 = new Product(102, "Watch", 5000);
+
+let product3 = new Electronics(103, "Laptop", 60000, 2);
+
+// Display products
+console.log("Product 1:");
+product1.display();
+
+console.log("\nProduct 2:");
+product2.display();
+console.log("\nElectronic Product:");
+product3.display();
+
+// Discount calculation
+console.log("\nDiscounted Price of Product 1:");
+console.log("₹" + product1.getDiscountedPrice(10));
+
+Product.compareProducts(product1, product2);
+Product.compareProducts(product2, product3);
+
+</script>
+    
+    
+</body>
+</html>
+
