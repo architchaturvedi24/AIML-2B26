@@ -8,9 +8,54 @@
 <body>
     <h1> Employee And Manager Payroll System</h1>
     <script>
-        class employee{
-            
-        }
+      class Employee {
+        constructor(id, name, basicSalary) {
+        this.id = id;
+        this.name = name;
+        this.basicSalary = basicSalary;
+    }
+    calculateSalary() {      // Instance method
+        return this.basicSalary;
+    }
+}
+// Derived class Manager
+class Manager extends Employee {
+    constructor(id, name, basicSalary, incentive) {
+        super(id, name, basicSalary);
+        this.incentive = incentive;
+    }
+    // Method overriding
+    calculateSalary() {
+        return this.basicSalary + this.incentive;
+    }
+}
+// Creating Employee object
+let employee = new Employee(
+    101,
+    "Rahul",
+    30000
+);
+// Creating Manager object
+let manager = new Manager(
+    102,
+    "Amit",
+    50000,
+    15000
+);
+// Display Employee details
+          console.log("Employee Details:");
+        console.log("ID:", employee.id);
+        console.log("Name:", employee.name);
+       console.log("Basic Salary: Rs.", employee.basicSalary);
+          console.log("Total Salary: Rs.", employee.calculateSalary());
+
+// Display Manager details
+    console.log("\nManager Details:");
+      console.log("ID:", manager.id);
+console.log("Name:", manager.name);
+       console.log("Basic Salary: Rs.", manager.basicSalary);
+    console.log("Incentive: Rs.", manager.incentive);
+      console.log("Total Salary: Rs.", manager.calculateSalary());
     </script>
     
 </body>
