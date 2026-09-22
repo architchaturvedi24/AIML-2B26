@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hospital Management System</title>
+</head>
+<body>
+    <h1>Hospital Management System</h1>
+    <script>
+    class Person {
+    static count = 0;
+    constructor(id, name, age) {
+         this.id = id;
+          this.name = name;
+           this.age = age;
+
+        Person.count++;
+ }
+// Instance method
+     displayDetails() {
+           console.log("ID:", this.id);
+          console.log("Name:", this.name);
+            console.log("Age:", this.age);
+    }
+    // Static method
+       static displayTotalPersons() {
+        console.log("\nTotal Persons Created:", Person.count);
+    }
+}
+// Derived class Doctor
+       class Doctor extends Person {
+         constructor(id, name, age, specialization, consultationFee) {
+             super(id, name, age);
+
+           this.specialization = specialization;
+             this.consultationFee = consultationFee;
+   }
+// Method overriding
+            displayDetails() {
+              console.log("\n--- Doctor Details ---");
+            console.log("ID:", this.id);
+            console.log("Name:", this.name);
+          console.log("Age:", this.age);
+            console.log("Specialization:", this.specialization);
+        console.log("Consultation Fee: Rs.", this.consultationFee);
+    }
+}
+// Derived class Patient
+           class Patient extends Person {
+            constructor(id, name, age, disease, roomNo) {
+         super(id, name, age);
+
+          this.disease = disease;
+        this.roomNo = roomNo;
+ }
+ // Method overriding
+    displayDetails() {
+             console.log("\n--- Patient Details ---");
+           console.log("ID:", this.id);
+              console.log("Name:", this.name);
+            console.log("Age:", this.age);
+           console.log("Disease:", this.disease);
+              console.log("Room No:", this.roomNo);
+    }
+}
+   let doctor1 = new Doctor(
+    101,
+    "Dr. Rahul Sharma",
+    45,
+    "Cardiologist",
+    1000
+);
+   let doctor2 = new Doctor
+    </script>
+    
+</body>
+</html>

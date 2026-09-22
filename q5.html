@@ -30,16 +30,16 @@
     // Method overriding
     calculateFare() {
         return this.distance * 15;
-    }
+      }
    }
       class Bike extends Vehicle {
-        constructor(vehicleNo, driverName, distance) {
+          constructor(vehicleNo, driverName, distance) {
         super(vehicleNo, driverName, distance);
-    }
-    // Method overriding
+      }
+ // Method overriding
     calculateFare() {
         return this.distance * 8;
-    }
+        }
    }
 // Calling static method
     Vehicle.bookingPlatform();
