@@ -9,6 +9,7 @@
     <h1>Hospital Management Systems</h1>
     <script>
     class Person {
+        
     static count = 0;
     constructor(id, name, age) {
          this.id = id;
@@ -35,7 +36,7 @@
 
            this.specialization = specialization;
              this.consultationFee = consultationFee;
-   }
+      }
 // Method overriding
             displayDetails() {
               console.log("\n--- Doctor Details ---");
@@ -44,8 +45,8 @@
           console.log("Age:", this.age);
             console.log("Specialization:", this.specialization);
         console.log("Consultation Fee: Rs.", this.consultationFee);
-    }
-}
+      }
+   }
 // Derived class Patient
            class Patient extends Person {
             constructor(id, name, age, disease, roomNo) {
@@ -53,8 +54,7 @@
 
           this.disease = disease;
         this.roomNo = roomNo;
- }
- // Method overriding
+   }
     displayDetails() {
              console.log("\n--- Patient Details ---");
            console.log("ID:", this.id);
@@ -62,17 +62,16 @@
             console.log("Age:", this.age);
            console.log("Disease:", this.disease);
               console.log("Room No:", this.roomNo);
-    }
-}
+       }
+     }
    let doctor1 = new Doctor(
     101,
     "Dr. Rahul Sharma",
     45,
     "Cardiologist",
     1000
-);
+   );
    let doctor2 = new Doctor
     </script>
-    
 </body>
 </html>
