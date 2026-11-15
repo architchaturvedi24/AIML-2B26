@@ -17,7 +17,7 @@ myEmitter.emit('exit', 100);
 
 
 
-//  Experiment 1 : b :
+//  Experiments 1 : b :
 
 const EventEmitter = require('events');
 
