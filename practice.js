@@ -1,5 +1,6 @@
 // Experiment 1: EventEmitter
 
+
 const EventEmitter = require('events');
 
 const myEmitter = new EventEmitter();
